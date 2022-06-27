@@ -5,7 +5,35 @@ body {
   padding: 12px;
 }
 
+ul{
+  padding: 0;
+  margin: 0;
+}
 
-.child{
-  margin-bottom: 15px;
+li{
+  display: inline-block;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+li + li {
+  margin-left: 10px;
+}
+
+li + li:before {
+  content: '•';
+  padding-right: 10px;
+}
+
+
+a{
+  text-decoration: none;
+
+  color: #333;
+  border-bottom: 2px solid #333;
+}
+
+.menu{
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
